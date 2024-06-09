@@ -2,21 +2,27 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
+interface Crypto {
+  id: string;
+  name: string;
+  image: string;
+}
+
 const Converter = () => {
-  const [cryptoList, setCryptoList] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [cryptoA, setCryptoA] = useState('ethereum'); // Set default value to Ethereum
-  const [cryptoB, setCryptoB] = useState('bitcoin'); // Set default value to Bitcoin
-  const [amountA, setAmountA] = useState(''); // Set initial state to an empty string
-  const [amountB, setAmountB] = useState(''); // Set initial state to an empty string
-  const [exchangeRate, setExchangeRate] = useState(0); // Set initial exchange rate to 0
-  const [error, setError] = useState('');
+  const [cryptoList, setCryptoList] = useState<Crypto[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [cryptoA, setCryptoA] = useState<string>('ethereum'); // Set default value to Ethereum
+  const [cryptoB, setCryptoB] = useState<string>('bitcoin'); // Set default value to Bitcoin
+  const [amountA, setAmountA] = useState<string>(''); // Set initial state to an empty string
+  const [amountB, setAmountB] = useState<string>(''); // Set initial state to an empty string
+  const [exchangeRate, setExchangeRate] = useState<number>(0); // Set initial exchange rate to 0
+  const [error, setError] = useState<string>('');
 
   useEffect(() => {
     const fetchTopCrypto = async () => {
       try {
         setLoading(true);
-        const response = await axios.get('https://api.coingecko.com/api/v3/coins/markets', {
+        const response = await axios.get<Crypto[]>('https://api.coingecko.com/api/v3/coins/markets', {
           params: { vs_currency: 'usd', per_page: 10, page: 1, order: 'market_cap_desc' }
         });
         setCryptoList(response.data);
@@ -31,7 +37,7 @@ const Converter = () => {
 
   const handleConvert = async () => {
     try {
-      const response = await axios.get(`https://api.coingecko.com/api/v3/simple/price`, {
+      const response = await axios.get<{[key: string]: {[key: string]: number}}>('https://api.coingecko.com/api/v3/simple/price', {
         params: {
           ids: cryptoA,
           vs_currencies: cryptoB
@@ -44,7 +50,7 @@ const Converter = () => {
       // Convert amountA to number and calculate amountB
       const parsedAmountA = parseFloat(amountA);
       if (!isNaN(parsedAmountA)) {
-        setAmountB(parsedAmountA * newExchangeRate);
+        setAmountB((parsedAmountA * newExchangeRate).toString());
       } else {
         setAmountB('');
       }
