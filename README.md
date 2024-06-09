@@ -5,6 +5,11 @@ This DeFi application is a mobile-friendly app that provides wallet connectivity
   
 
 https://github.com/Zouziszzm/swapapp/assets/63239385/ef235d56-2dbe-4148-ab43-404248b3e19d
+##Tech Stcak
+Editor:NVIM, Windows Terminal.
+Framework: Nextjs.
+Languages:Typescript.
+Depes: Chartjs, Coingeeko.
 
 
 ## Features
