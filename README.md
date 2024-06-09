@@ -3,9 +3,13 @@
 ## Overview
 This DeFi application is a mobile-friendly app that provides wallet connectivity, token swapping, and visualization of cryptocurrency prices. The app allows users to connect their Ethereum wallets using MetaMask or WalletConnect and view real-time price charts for various cryptocurrencies.
   
+##video Preview
 
-https://github.com/Zouziszzm/swapapp/assets/63239385/ef235d56-2dbe-4148-ab43-404248b3e19d
-[![Video Thumbnail](https://github.com/Zouziszzm/swapapp/assets/63239385/c3227ebb-ac7b-4cdc-8298-fe913922ebb3)](https://github.com/Zouziszzm/swapapp/assets/63239385/ef235d56-2dbe-4148-ab43-404248b3e19d)
+
+https://github.com/Zouziszzm/swapapp/assets/63239385/4aafe7ba-bd65-4a48-ba51-7625d1dbd803
+
+
+
 ##Tech Stcak
 Editor:NVIM, Windows Terminal.
 Framework: Nextjs.
