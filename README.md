@@ -5,6 +5,7 @@ This DeFi application is a mobile-friendly app that provides wallet connectivity
   
 
 https://github.com/Zouziszzm/swapapp/assets/63239385/ef235d56-2dbe-4148-ab43-404248b3e19d
+[![Video Thumbnail](https://github.com/Zouziszzm/swapapp/assets/63239385/c3227ebb-ac7b-4cdc-8298-fe913922ebb3)](https://github.com/Zouziszzm/swapapp/assets/63239385/ef235d56-2dbe-4148-ab43-404248b3e19d)
 ##Tech Stcak
 Editor:NVIM, Windows Terminal.
 Framework: Nextjs.
