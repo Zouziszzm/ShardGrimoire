@@ -39,7 +39,7 @@ const LandingPage = () => {
                       d="M12 4v16m8-8H4"
                     />
                   </svg>
-                  <span className="font-bold">Brand</span>
+                  <span className="font-bold">Swap</span>
                 </a>
               </div>
             </div>
@@ -50,18 +50,6 @@ const LandingPage = () => {
                 className="py-5 px-3 text-gray-700 hover:text-gray-900"
               >
                 Home
-              </a>
-              <a
-                href="#"
-                className="py-5 px-3 text-gray-700 hover:text-gray-900"
-              >
-                About
-              </a>
-              <a
-                href="#"
-                className="py-5 px-3 text-gray-700 hover:text-gray-900"
-              >
-                Services
               </a>
               <ConnectKitButton />
             </div>
@@ -92,12 +80,6 @@ const LandingPage = () => {
             <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">
               Home
             </a>
-            <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">
-              About
-            </a>
-            <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">
-              Services
-            </a>
             <ConnectKitButton />
           </div>
         )}
@@ -111,11 +93,10 @@ const LandingPage = () => {
               Welcome to Our Site
             </h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              A better way to manage your projects
+              A better way to swap crypto
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              Our tool helps you streamline your project management process,
-              making your team more productive and efficient.
+              Our tool helps you convert and see crypto prices live{" "}
             </p>
           </div>
           <div className="mt-10 lg:flex lg:justify-center">
@@ -132,14 +113,12 @@ const LandingPage = () => {
               Features
             </h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              Everything you need to manage your projects
+              Everything crypto you need to see
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-              From task management to team collaboration, our tool has it all.
+              only showing a limited no of crypto becouse of performanc issue.
+              is feched by an API
             </p>
-          </div>
-          <div className="flex w-full justify-center">
-            <CryptoComponent />
           </div>
           <div className="w-full flex justify-center"></div>
           <div className="mt-10">
@@ -166,11 +145,10 @@ const LandingPage = () => {
                       </span>
                     </div>
                     <h3 className="mt-8 text-lg leading-6 font-medium text-gray-900">
-                      Task Management
+                      Crypto convertion
                     </h3>
                     <p className="mt-5 text-base text-gray-500">
-                      Organize your tasks with ease and keep track of project
-                      progress.
+                      a easy way to convert crypto
                     </p>
                   </div>
                 </div>
@@ -197,11 +175,10 @@ const LandingPage = () => {
                       </span>
                     </div>
                     <h3 className="mt-8 text-lg leading-6 font-medium text-gray-900">
-                      Team Collaboration
+                      crypto currency
                     </h3>
                     <p className="mt-5 text-base text-gray-500">
-                      Collaborate with your team in real-time and stay on the
-                      same page.
+                      a neat graph to show crypto currencys and its prices.
                     </p>
                   </div>
                 </div>
@@ -228,15 +205,23 @@ const LandingPage = () => {
                       </span>
                     </div>
                     <h3 className="mt-8 text-lg leading-6 font-medium text-gray-900">
-                      Reporting
+                      Not all expections meet.
                     </h3>
                     <p className="mt-5 text-base text-gray-500">
-                      Generate detailed reports to monitor project performance.
+                      I am very soory for not meeting all requirements and
+                      expections but i have given my all to this project . I
+                      have only worked with making ui by design from figma and
+                      never worked in details with too much api fetching. I
+                      would love to learn more about it and if given a chance
+                      would learn fast.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+          <div className="flex w-full justify-center">
+            <CryptoComponent />
           </div>
         </div>
       </div>
