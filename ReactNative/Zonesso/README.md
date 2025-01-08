@@ -1,50 +1,86 @@
-# Welcome to your Expo app 👋
+# Zonesso Assessment Application - React Native
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is the Zonesso Assessment Application, a React Native project for a Car Wash and Detailing Booking System. It showcases car wash categories, services, and promotions while providing functionality for booking and payment.
 
-## Get started
+## 📽 Showcase
+A video walkthrough of the application is included to demonstrate its features and functionalities.
 
-1. Install dependencies
 
+
+https://github.com/user-attachments/assets/3f313eaf-9e7c-4c60-af14-dc9653ac5b6d
+
+
+## 🖍 Submission Note
+This project has been submitted as part of the Zonesso Assessment, with a deadline of 9th January 2025. I have utilized Context API for state management and Expo for navigation. I have tried my best to adhere to industry standards, but if any mistakes or shortcomings are found, I apologize in advance. If given the opportunity, I will address these issues and make improvements.
+
+## 🚀 Task Overview
+
+### Frontend (React Native):
+- **Home Screen:** Displays car wash categories, top showrooms, and promotions.
+- **Service Listing:** Lists car wash services based on location (e.g., Dubai, Sharjah).
+- **Service Details:** Includes:
+  - Service price and description.
+  - Contact details.
+  - "Chat" and "Call" buttons (UI only, no functionality).
+- **Company Profile:** Displays company info and available services.
+- **Booking Screen:** Form to select date, time, location, and vehicle details.
+- **Payment Screen:** Displays a summary and a "Payment Confirmation" button.
+
+### Backend (Node.js using NestJS):
+- **API Endpoints:**
+  - Fetch categories and services by location.
+  - Retrieve service details.
+  - Store user bookings (service, date, time, location, vehicle).
+  - Mock payment handling (no real payment processing).
+
+### Database (MongoDB):
+- Stores categories, services, bookings, and payment details.
+
+## 🛠️ Technologies Used
+
+### Frontend:
+- **React Native (Framework)**
+- **Expo Router (Navigation)**
+- **Context API (State Management)**
+- **Tailwind CSS (Styling)**
+
+### Backend:
+- **Node.js with NestJS (Framework)**
+- **MongoDB (Database)**
+- **Mongoose (ODM for MongoDB)**
+
+## 🛠️ Development Instructions
+
+### Prerequisites:
+- Install Node.js and npm.
+- Install Expo CLI.
+
+### Frontend:
+1. Navigate to the frontend directory.
+2. Install dependencies.
+
+### Backend:
+1. Navigate to the backend directory.
+2. Install dependencies.
+3. Run the server:
    ```bash
-   npm install
-   ```
+   npm start
+## 🧪 Features Implemented
+- **React Navigation** for seamless navigation.
+- **Form Validation** for booking details (e.g., date, time, location).
+- **Clean and reusable code.**
+- **Video walkthrough** of the application to demonstrate features.
 
-2. Start the app
+## 🔧 Improvements
+I have done my best to meet the required standards, but there may still be areas for improvement. I welcome any feedback and, if given the opportunity, will refine the project further.
 
-   ```bash
-    npx expo start
-   ```
+## 📅 Submission Timeline
+The project is submitted on 9th January 2025, as per the provided timeline.
 
-In the output, you'll find options to open the app in a
+## 📚 Additional Resources
+- [Expo Documentation](https://docs.expo.dev/)
+- [React Native Documentation](https://reactnative.dev/docs/getting-started)
+- [NestJS Documentation](https://docs.nestjs.com/)
+- [MongoDB Documentation](https://docs.mongodb.com/)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Thank you for reviewing this submission. 🙏
