@@ -28,8 +28,8 @@ import ShowerImage from "../../../assets/images/ShowerImage.png";
 import TruckImage from "../../../assets/images/TruckImage.png";
 import ShipImage from "../../../assets/images/ShipImage.png";
 import AD01 from "../../../assets/images/ads01.png";
-import ToyotaLogo from "../../../assets/images/ToyotaLogo.png"; // Add this import for the logo
-import Toyota from "../../../assets/images/Toyota.png"; // Add this import for the logo
+import ToyotaLogo from "../../../assets/images/ToyotaLogo.png";
+import Toyota from "../../../assets/images/Toyota.png"; 
 
 const Home = () => {
   const [city, setCity] = useState("Dubai");

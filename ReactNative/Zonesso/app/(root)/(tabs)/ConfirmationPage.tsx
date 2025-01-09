@@ -81,7 +81,7 @@ const ConfirmationPage = () => {
       >
         <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
           <View style={{ width: 300, padding: 20, backgroundColor: '#fff', borderRadius: 10, alignItems: 'center' }}>
-            <Image source={require('./path-to-checkmark-icon.png')} style={{ width: 50, height: 50, marginBottom: 10 }} />
+            <Image source={require('../../../assets/images/path-to-checkmark-icon.png')} style={{ width: 50, height: 50, marginBottom: 10 }} />
             <Text style={{ fontSize: 24, fontWeight: 'bold', textAlign: 'center' }}>Congratulations!</Text>
             <Text style={{ fontSize: 16, textAlign: 'center', marginBottom: 20 }}>Your ad is now live</Text>
             <TouchableOpacity style={{ backgroundColor: 'orange', padding: 10, borderRadius: 5 }} onPress={handleCloseModal}>
