@@ -23,10 +23,6 @@ const ConfirmationPage = () => {
       </View>
 
       <View style={{ marginBottom: 16 }}>
-        <Image
-          source={{ uri: 'https://via.placeholder.com/150' }}
-          style={{ width: '100%', height: 350 }}
-        />
       </View>
 
       <View style={{ marginBottom: 16 }}>

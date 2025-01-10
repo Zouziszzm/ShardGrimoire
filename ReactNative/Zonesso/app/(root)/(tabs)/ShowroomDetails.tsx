@@ -308,7 +308,7 @@ const ShowroomDetails = () => {
                   </View>
                   <View className="flex-row justify-around w-full mx-1 py-7 pb-4">
                     <TouchableOpacity className="rounded-lg border border-red-500 py-4 px-4 w-[49%]">
-                      <Text className="text-red-500 font-bold text-center text-xl">
+                      <Text className="text-red-500 font-bold text-center text-xl bg-gradient-to-r ">
                         Chat
                       </Text>
                     </TouchableOpacity>

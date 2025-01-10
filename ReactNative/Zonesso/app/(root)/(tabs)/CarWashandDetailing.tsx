@@ -141,7 +141,8 @@ const CarWashandDetailing = () => {
                 <Text style={{ color: "blue" }}>View All</Text>
               </TouchableOpacity>
             </View>
-            <ScrollView horizontal>
+            <ScrollView horizontal showsVerticalScrollIndicator={false} // Hides the vertical scrollbar
+      showsHorizontalScrollIndicator={false}>
               <View style={{ flexDirection: "row" }}>
                 {servicesList.map((service, index) => (
                   <Link

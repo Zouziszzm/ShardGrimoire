@@ -56,29 +56,30 @@ const ServiceBooking = () => {
       <View className="mb-4">
         <Text className="text-lg font-bold">Please choose preferred location</Text>
         <TouchableOpacity onPress={() => setLocation('Perfect Spot Auto Spa')} className={`border p-2 rounded mt-2 ${location === 'Perfect Spot Auto Spa' ? 'bg-gray-200' : ''}`}>
-          <View className="flex-row items-center">
+          <View className="flex-row items-center justify-between">
+            <View>
+              <Text>Perfect Spot Auto Spa</Text>
+              <Text>Deira, Dubai, United Arab Emirates</Text>
+            </View>
             <RadioButton
               value="Perfect Spot Auto Spa"
               status={location === 'Perfect Spot Auto Spa' ? 'checked' : 'unchecked'}
               onPress={() => setLocation('Perfect Spot Auto Spa')}
             />
-            <View>
-              <Text>Perfect Spot Auto Spa</Text>
-              <Text>Deira, Dubai, United Arab Emirates</Text>
-            </View>
           </View>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => setLocation('Home Service')} className={`border p-2 rounded mt-2 ${location === 'Home Service' ? 'bg-gray-200' : ''}`}>
-          <View className="flex-row items-center">
+          <View className="flex-row items-center justify-between">
+            <View>
+              <Text>Home Service</Text>
+              <Text>Saved Address: Nasa Bldg, Deira, Dubai, UAE</Text>
+            </View>
+
             <RadioButton
               value="Home Service"
               status={location === 'Home Service' ? 'checked' : 'unchecked'}
               onPress={() => setLocation('Home Service')}
             />
-            <View>
-              <Text>Home Service</Text>
-              <Text>Saved Address: Nasa Bldg, Deira, Dubai, UAE</Text>
-            </View>
           </View>
         </TouchableOpacity>
       </View>
@@ -86,29 +87,31 @@ const ServiceBooking = () => {
       <View className="mb-4">
         <Text className="text-lg font-bold">Please choose your vehicle</Text>
         <TouchableOpacity onPress={() => setVehicle('Lamborghini Aventador')} className={`border p-2 rounded mt-2 ${vehicle === 'Lamborghini Aventador' ? 'bg-gray-200' : ''}`}>
-          <View className="flex-row items-center">
+          <View className="flex-row items-center justify-between">
+            <View>
+              <Text>Lamborghini Aventador</Text>
+              <Text>AE 123456</Text>
+            </View>
+
             <RadioButton
               value="Lamborghini Aventador"
               status={vehicle === 'Lamborghini Aventador' ? 'checked' : 'unchecked'}
               onPress={() => setVehicle('Lamborghini Aventador')}
             />
-            <View>
-              <Text>Lamborghini Aventador</Text>
-              <Text>AE 123456</Text>
-            </View>
           </View>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => setVehicle('Nissan Patrol')} className={`border p-2 rounded mt-2 ${vehicle === 'Nissan Patrol' ? 'bg-gray-200' : ''}`}>
-          <View className="flex-row items-center">
+          <View className="flex-row items-center justify-between">
+            <View>
+              <Text>Nissan Patrol</Text>
+              <Text>PLATE 12345</Text>
+            </View>
+
             <RadioButton
               value="Nissan Patrol"
               status={vehicle === 'Nissan Patrol' ? 'checked' : 'unchecked'}
               onPress={() => setVehicle('Nissan Patrol')}
             />
-            <View>
-              <Text>Nissan Patrol</Text>
-              <Text>PLATE 12345</Text>
-            </View>
           </View>
         </TouchableOpacity>
         <TouchableOpacity className="border p-2 rounded mt-2">
@@ -119,12 +122,7 @@ const ServiceBooking = () => {
       <View className="mb-4">
         <Text className="text-lg font-bold">Select type of Car wash</Text>
         <TouchableOpacity onPress={() => setService('Classic Clean')} className={`border p-2 rounded mt-2 ${service === 'Classic Clean' ? 'bg-gray-200' : ''}`}>
-          <View className="flex-row items-center">
-            <RadioButton
-              value="Classic Clean"
-              status={service === 'Classic Clean' ? 'checked' : 'unchecked'}
-              onPress={() => setService('Classic Clean')}
-            />
+          <View className="flex-row items-center justify-between">
             <View>
               <Text>Classic Clean</Text>
               <Text>AED 150</Text>
@@ -133,15 +131,15 @@ const ServiceBooking = () => {
               <Text>✔ Premium scratch free micro-fibre towels</Text>
               <Text>✔ Luxury wax hand wash</Text>
             </View>
+            <RadioButton
+              value="Classic Clean"
+              status={service === 'Classic Clean' ? 'checked' : 'unchecked'}
+              onPress={() => setService('Classic Clean')}
+            />
           </View>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => setService('Classic Clean + Interior')} className={`border p-2 rounded mt-2 ${service === 'Classic Clean + Interior' ? 'bg-gray-200' : ''}`}>
-          <View className="flex-row items-center">
-            <RadioButton
-              value="Classic Clean + Interior"
-              status={service === 'Classic Clean + Interior' ? 'checked' : 'unchecked'}
-              onPress={() => setService('Classic Clean + Interior')}
-            />
+          <View className="flex-row items-center justify-between">
             <View>
               <Text>Classic Clean + Interior</Text>
               <Text>AED 300</Text>
@@ -150,6 +148,11 @@ const ServiceBooking = () => {
               <Text>✔ Interior deep cleaning and vacuum</Text>
               <Text>✔ Leather conditioning</Text>
             </View>
+            <RadioButton
+              value="Classic Clean + Interior"
+              status={service === 'Classic Clean + Interior' ? 'checked' : 'unchecked'}
+              onPress={() => setService('Classic Clean + Interior')}
+            />
           </View>
         </TouchableOpacity>
       </View>

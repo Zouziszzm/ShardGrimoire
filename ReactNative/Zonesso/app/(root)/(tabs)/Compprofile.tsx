@@ -72,7 +72,7 @@ const Compprofile = () => {
         </View>
 
         {/* Main Information Section */}
-        <View className="p-4 bg-white shadow-md rounded-lg mx-4 -mt-16 flex-col items-center border-black border">
+        <View className="p-4 bg-white shadow-md rounded-lg mx-4 -mt-16 flex-col items-center">
           <View className="flex-row w-[70%] justify-around items-center">
             <Image source={Logo} className="w-16 h-16 rounded-full" />
             <View className="py-7">
@@ -158,7 +158,7 @@ const Compprofile = () => {
         {/* Content Section */}
         {tab === "services" ? (
           <View>
-            <View className="p-7 bg-white m-3 rounded-lg border h-[320px]">
+            <View className="p-7 bg-white m-3 rounded-lg h-[320px]">
               <Link
                 href={{
                   pathname: "/ServiceBooking", // Adjust the path to the actual file
@@ -193,7 +193,7 @@ const Compprofile = () => {
               </Link>
             </View>
 
-            <View className="p-7 bg-white m-3 rounded-lg border h-[320px]">
+            <View className="p-7 bg-white m-3 rounded-lg h-[320px]">
               <Link
                 href={{
                   pathname: "/ServiceBooking", // Adjust the path to the actual file
